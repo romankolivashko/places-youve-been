@@ -36,3 +36,20 @@ function Place(location, landmarks, timeOfYear, notes) {
   this.timeOfYear = timeOfYear;
   this.notes = notes;
 }
+
+//UI logic
+
+$(document).ready(function () {
+  $("#formOne").submit(function (event) {
+    event.preventDefault();
+    const locationInput = $("#locationInput").val();
+    const landmarksInput = $("#landmarksInput").val();
+    const timeInput = $("#timeInput").val();
+    const notesInput = $("#notesInput").val();
+
+    $(".location").text(locationInput);
+    $(".landmarks").text(landmarksInput);
+    $(".time-of-year").text(timeInput);
+    $(".notes").text(notesInput);
+  });
+});

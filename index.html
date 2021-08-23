@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="US">
+
+<head>
+  <script src="js/jquery.js"></script>
+  <script src="js/scripts.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Places</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Places You've Been</h1>
+    </div>
+
+    <form id="formOne">
+      <div class="form-group">
+        <label for="locationInput">Please enter a location</label>
+        <input id="locationInput" class="form-control" type="text" required>
+      </div>
+
+      <div class="form-group">
+        <label for="landmarksInput">Please enter a landmark</label>
+        <input id="landmarksInput" class="form-control" type="text" required>
+      </div>
+
+      <div class="form-group">
+        <label for="timeInput">Please enter a time of year</label>
+        <input id="timeInput" class="form-control" type="text" required>
+      </div>
+
+      <div class="form-group">
+        <label for="notesInput">Please enter some notes</label>
+        <input id="notesInput" class="form-control" type="text" required>
+      </div>
+
+      <button type="submit" class="btn">Submit</button>
+
+    </form>
+
+    <div id="output">
+      <p>Location: <span class='location'></span></p>
+      <p>Landmarks: <span class='landmarks'></span></p>
+      <p>Time of year: <span class='time-of-year'></span></p>
+      <p>Notes: <span class='notes'></span></p>
+    </div>
+  </div>
+</body>
+
+</html>
